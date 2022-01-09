@@ -117,16 +117,51 @@
   + 全局修改自定义动态Material组件
   + 注册 ID标识 ，通过注册ID整体修改
   + 支持关卡蓝图、子蓝图调用
+
 + 样例
-  + 
+  + 场景中拖入BPGlobalChangeImageActor,设置注册ID（Global Change Image ID）  
 
+    ![image-20220110060811598](README.assets/image-20220110060811598.png)
 
+    ![image-20220110060836987](README.assets/image-20220110060836987.png)
 
-+ GlobalChangeImage                               全局更改图像模块
+  + 调用蓝图函数  SetGlobalChangeImage  
+
+    ![image-20220110060942342](README.assets/image-20220110060942342.png)
+
+    ![image-20220110061026513](README.assets/image-20220110061026513.png)
+
+  + GlobalChangeImageDataArray  为FString数组  数组中FString格式为  ID|ImageName   
+
+  + ID为 注册ID（Global Change Image ID）  |为分割符   ImageName为图片名称（含后缀）
+
+  + GlobalChangeImagePath  为图片路径
+
+    ![image-20220110061528436](README.assets/image-20220110061528436.png)
+
+    ![image-20220110061601368](README.assets/image-20220110061601368.png)
+
+    ![image-20220110061742252](README.assets/image-20220110061742252.png)
+
+    ![image-20220110062220258](README.assets/image-20220110062220258.png)
+
+  + 运行结果
+
+    ![image-20220110062641199](README.assets/image-20220110062641199.png)
+
+  
+
+  
+
 + FileJsonTxtManager                                JsonTxt文件管理模块
+
 + VideoControlManager                            视频控制管理模块
+
 + LevelSequenceControlManager           关卡序列动画管理模块
+
 + DrawBoardManager                               画板管理模块
+
 + TouchScreenGameMode                       触控屏游戏模式模块
+
 + ResourceManager                                   本地化存储管理模块
 
