@@ -59,6 +59,31 @@
 
 ## 功能模块
 
+### TouchScreenGameMode
+
++ Content
+
+  ![image-20220110065259049](README.assets/image-20220110065259049.png)
+
++ 功能描述
+
+  + 触控屏游戏模式
+  + 支持鼠标点击
+  + 关闭视角移动
+  + 关闭飞行位移
+
++ 样例
+
+  + 切换到WorldSetting
+
+    ![image-20220110065505345](README.assets/image-20220110065505345.png)
+
+  + 选择游戏模式为BPTouchScreenGameMode  子模式选择对应的BPTouchScreenClass
+
+    ![image-20220110065647000](README.assets/image-20220110065647000.png)
+
+    
+
 ### GlobalChangeText3D
 
 + Content
@@ -151,7 +176,25 @@
 
   
 
-  
++ 自定义材质更换
+
+  + 新建材质，创建 Texture Sample  选择默认Texture
+
+    ![image-20220110063537979](README.assets/image-20220110063537979.png)
+
+  + 将节点转换成param
+
+    ![image-20220110063657064](README.assets/image-20220110063657064.png)
+
+  + 参数名称改成T_GlobalChangeImage
+
+    ![image-20220110063910514](README.assets/image-20220110063910514.png)
+
+  + 最终将自定义的材质拖拽到BPGlobalChangeImageActor的材质球上
+
+    ![image-20220110064141274](README.assets/image-20220110064141274.png)
+
+  + ==注： 自定义材质在含有Texture Sample的param节点，参数名为T_GlobalChangeImage  且该材质为材质列表的第一个材质时生效==
 
 + FileJsonTxtManager                                JsonTxt文件管理模块
 
@@ -161,7 +204,7 @@
 
 + DrawBoardManager                               画板管理模块
 
-+ TouchScreenGameMode                       触控屏游戏模式模块
+  
 
 + ResourceManager                                   本地化存储管理模块
 
