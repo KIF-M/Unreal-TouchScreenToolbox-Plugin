@@ -196,7 +196,25 @@
 
   + ==注： 自定义材质在含有Texture Sample的param节点，参数名为T_GlobalChangeImage  且该材质为材质列表的第一个材质时生效==
 
-+ FileJsonTxtManager                                JsonTxt文件管理模块
+### FileJsonTxtManager  
+
++ Content
+
+  ![image-20220110070457342](README.assets/image-20220110070457342.png)
+
++ 功能描述
+
+  + 读取Json/Txt文件
+
+  + 解析JsonObject
+
+  + 解析JsonObjectArray
+
+  + 解析JsonValue
+
+    
+
+
 
 + VideoControlManager                            视频控制管理模块
 
