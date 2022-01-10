@@ -21,6 +21,8 @@
 
   ![image-20220110020452870](README.assets/image-20220110020452870.png)
 
+  
+
 + 插件Content
 
   ![image-20220110020643205](README.assets/image-20220110020643205.png)
@@ -38,6 +40,8 @@
   ![image-20220110021011339](README.assets/image-20220110021011339.png)
 
   ![image-20220110021100307](README.assets/image-20220110021100307.png)
+
+  
 
 + 插件C++
 
@@ -65,12 +69,15 @@
 
   ![image-20220110065259049](README.assets/image-20220110065259049.png)
 
+  
+
 + 功能描述
 
   + 触控屏游戏模式
   + 支持鼠标点击
   + 关闭视角移动
   + 关闭飞行位移
+  + 
 
 + 样例
 
@@ -78,10 +85,12 @@
 
     ![image-20220110065505345](README.assets/image-20220110065505345.png)
 
+    
+
   + 选择游戏模式为BPTouchScreenGameMode  子模式选择对应的BPTouchScreenClass
 
     ![image-20220110065647000](README.assets/image-20220110065647000.png)
-
+  
     
 
 ### GlobalChangeText3D
@@ -94,11 +103,14 @@
 
   ![image-20220110032204523](README.assets/image-20220110032204523.png)
 
+  
+
 + 功能描述
 
   + 全局修改自定义3D Text 组件
   + 注册 ID标识 ，通过注册ID整体修改
   + 支持关卡蓝图、子蓝图调用
+  + 
 
 + 样例
 
@@ -107,6 +119,8 @@
     ![image-20220110033102961](README.assets/image-20220110033102961.png)
 
     ![image-20220110033132646](README.assets/image-20220110033132646.png)
+
+    
 
   + 调用蓝图函数  SetGlobalChangeText3D    
 
@@ -120,8 +134,10 @@
 
     ![image-20220110031436879](README.assets/image-20220110031436879.png)
 
+    
+  
   + 运行结果
-
+  
     ![image-20220110033229589](README.assets/image-20220110033229589.png)
 
 
@@ -138,11 +154,17 @@
 
   ![image-20220110032613389](README.assets/image-20220110032613389.png)
 
+  
+
 + 功能描述
   + 全局修改自定义动态Material组件
+  
   + 注册 ID标识 ，通过注册ID整体修改
-  + 支持关卡蓝图、子蓝图调用
 
+  + 支持关卡蓝图、子蓝图调用
+  
+    
+  
 + 样例
   + 场景中拖入BPGlobalChangeImageActor,设置注册ID（Global Change Image ID）  
 
@@ -150,11 +172,15 @@
 
     ![image-20220110060836987](README.assets/image-20220110060836987.png)
 
+    
+
   + 调用蓝图函数  SetGlobalChangeImage  
 
     ![image-20220110060942342](README.assets/image-20220110060942342.png)
 
     ![image-20220110061026513](README.assets/image-20220110061026513.png)
+
+    
 
   + GlobalChangeImageDataArray  为FString数组  数组中FString格式为  ID|ImageName   
 
@@ -170,44 +196,61 @@
 
     ![image-20220110062220258](README.assets/image-20220110062220258.png)
 
+    
+
   + 运行结果
-
-    ![image-20220110062641199](README.assets/image-20220110062641199.png)
-
   
-
+    ![image-20220110062641199](README.assets/image-20220110062641199.png)
+  
+  
+  
 + 自定义材质更换
 
   + 新建材质，创建 Texture Sample  选择默认Texture
 
     ![image-20220110063537979](README.assets/image-20220110063537979.png)
 
+    
+
   + 将节点转换成param
 
     ![image-20220110063657064](README.assets/image-20220110063657064.png)
+
+    
 
   + 参数名称改成T_GlobalChangeImage
 
     ![image-20220110063910514](README.assets/image-20220110063910514.png)
 
+    
+  
   + 最终将自定义的材质拖拽到BPGlobalChangeImageActor的材质球上
-
+  
     ![image-20220110064141274](README.assets/image-20220110064141274.png)
-
+  
   + ==注： 自定义材质在含有Texture Sample的param节点，参数名为T_GlobalChangeImage  且该材质为材质列表的第一个材质时生效==
+  
+    
 
-### FileJsonTxtManager  
+### FileJsonTxtManager
 
 + Content
 
   ![image-20220110070457342](README.assets/image-20220110070457342.png)
 
+  
+
 + 功能描述
   + 读取Json/Txt文件
+  
   + 解析JsonObject
+  
   + 解析JsonObjectArray
+  
   + 解析JsonValue
-
+  
+    
+  
 + 样例
 
   + TXT解析 ParseTxtFileFromDisk 
@@ -218,9 +261,13 @@
 
       <img src="README.assets/image-20220110074241255.png" alt="image-20220110074241255" style="zoom:67%;" />
 
+      
+
     + 演示
 
       ![image-20220110074830782](README.assets/image-20220110074830782.png)
+
+      
 
     + 运行结果
 
@@ -236,9 +283,13 @@
 
       ![image-20220110075404667](README.assets/image-20220110075404667.png)
 
+      
+
     + 演示
 
       ![image-20220110081035211](README.assets/image-20220110081035211.png)
+
+      
 
     + 运行结果
 
@@ -260,6 +311,8 @@
 
       ![image-20220110081735915](README.assets/image-20220110081735915.png)
 
+      
+
     + 运行结果
 
       ![image-20220110081845474](README.assets/image-20220110081845474.png)
@@ -274,9 +327,13 @@
 
       ![image-20220110082541382](README.assets/image-20220110082541382.png)
 
+      
+
     + 演示
 
       ![image-20220110083658208](README.assets/image-20220110083658208.png)
+
+      
 
     + 运行结果
 
@@ -292,13 +349,19 @@
 
       ![image-20220110082634674](README.assets/image-20220110082634674.png)
 
+      
+
     + 演示
 
       ![image-20220110083927576](README.assets/image-20220110083927576.png)
 
+      
+
     + 运行结果
 
       ![image-20220110083945859](README.assets/image-20220110083945859.png)
+      
+      
 
   + JsonObject 转 Json FString   JsonObjectToJsonFstring
 
@@ -308,13 +371,19 @@
 
       ![image-20220110083305850](README.assets/image-20220110083305850.png)
 
+      
+
     + 演示
 
       ![image-20220110084023056](README.assets/image-20220110084023056.png)
 
+      
+
     + 运行结果
 
       ![image-20220110084044748](README.assets/image-20220110084044748.png)
+      
+      
 
   + Json FString 转 JsonObject   JsonFStringToJsonObject
 
@@ -324,13 +393,19 @@
 
       ![image-20220110083427413](README.assets/image-20220110083427413.png)
 
+      
+
     + 演示
 
       ![image-20220110084137940](README.assets/image-20220110084137940.png)
 
+      
+    
     + 运行结果
-
+    
       ![image-20220110084155366](README.assets/image-20220110084155366.png)
+      
+      
 
 + ==注：浮点类型算小数点最多存放8位，超出范围数据会与源数据不同==
 
@@ -340,22 +415,122 @@
 
 + Content
 
+  ![image-20220110205805295](README.assets/image-20220110205805295.png)
+
+  ![image-20220110205844779](README.assets/image-20220110205844779.png)
+
+  ![image-20220110205911609](README.assets/image-20220110205911609.png)
+
+  ![image-20220110205942056](README.assets/image-20220110205942056.png)
+
+  ![image-20220110210005696](README.assets/image-20220110210005696.png)
+
   
 
 + 功能描述
 
   + 自定义视频播放组件
+
   + 支持读写本地及局域网文件
+
   + 视频控制器组件
+
   + 支持视频播放、暂停、进度条、跳帧
+
   + 支持多窗口同视频流及不同视频流
+
   + 解决二维鼠标相对坐标问题，转为三维空间射线碰撞运算
+
+    
 
 + 样例
 
+  + 游戏模式更改成触控屏模式
+
+    ![image-20220110210444063](README.assets/image-20220110210444063.png)
+
+    
+
+  + 将BPVideoControl拖拽到场景
+
+    ![image-20220110210807916](README.assets/image-20220110210807916.png)
+
+    
+
+  + 将场景树中将BPVideoControl拖拽到关卡蓝图中初始化  InitVideoControl   输入为视频路径  视频列表的文件名（带后缀）   视频初始化的下标
+
+    ![image-20220110211107931](README.assets/image-20220110211107931.png)
+
+    ![image-20220110211134104](README.assets/image-20220110211134104.png)
+
+    ![image-20220110211232779](README.assets/image-20220110211232779.png)
+
+    
+
+  + 演示
+
+    ![image-20220110211532813](README.assets/image-20220110211532813.png)
+
+    
+
+  + 运行效果
+
+    ![image-20220110211557173](README.assets/image-20220110211557173.png)
+
+    ![image-20220110211618505](README.assets/image-20220110211618505.png)
+
+    ![image-20220110211639220](README.assets/image-20220110211639220.png)
+
+    ![image-20220110211708039](README.assets/image-20220110211708039.png)
+
+    
 
 
-### LevelSequenceControlManager           
++ 新增新的MediaPlayer
+
+  + 复制VideoControlMediaPlayer    VideoControlVideoTexture    M_VideoControlMaterial  
+
+    ![image-20220110212025628](README.assets/image-20220110212025628.png)
+
+    ![image-20220110212047787](README.assets/image-20220110212047787.png)
+
+    ![image-20220110212122406](README.assets/image-20220110212122406.png)
+
+    
+
+  + Texture 中更改MediaPlayer
+
+    ![image-20220110212233841](README.assets/image-20220110212233841.png)
+
+    
+
+  + Meterial 中设置 Texture
+
+    ![image-20220110212334304](README.assets/image-20220110212334304.png)
+
+    
+
+  + 选择场景中的BPVideoControl  点击组件根级 设置 MediaPlayer  
+
+    ![image-20220110212724717](README.assets/image-20220110212724717.png)
+
+    
+
+  + 选择场景中的BPVideoControl  点击组件中VideoStaticMesh   设置 Material
+
+    ![image-20220110213102761](README.assets/image-20220110213102761.png)
+
+    
+
+  + 选择场景中的BPVideoControl  点击组件中MediaSound   设置 Media Player
+
+    ![image-20220110213204571](README.assets/image-20220110213204571.png)
+
+    
+
+
+
+### LevelSequenceControlManager
 
 + Content
 
@@ -377,7 +552,7 @@
 
 
 
-### DrawBoardManager                               
+### DrawBoardManager
 
 + Content
 
@@ -394,7 +569,7 @@
 
 
 
-### ResourceManager                                   
+### ResourceManager
 
 + Content
 
