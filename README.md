@@ -526,13 +526,17 @@
 
     ![image-20220110213204571](README.assets/image-20220110213204571.png)
 
-    
+
+
++ ==注：触控采用3D射线碰撞实现，所以触控区域前方不能有其他物体遮挡==
 
 
 
 ### LevelSequenceControlManager
 
 + Content
+
+  ![image-20220110214553041](README.assets/image-20220110214553041.png)
 
   
 
@@ -550,24 +554,145 @@
 
 + 样例
 
+  + 关卡序列设置  将所有动画设置 When Finished  设置成 Keep State
 
+    ![image-20220110215702737](README.assets/image-20220110215702737.png)
+
+    
+
+  + 插入标记   右键选择Add Mark
+
+    ![image-20220110220213229](README.assets/image-20220110220213229.png)
+
+    ![image-20220110220329140](README.assets/image-20220110220329140.png)
+
+    
+
+  + 将BPLevelSequenceControlActor拖拽到场景中，设置控制的关卡序列  设置 LevelSequence Control ID
+
+    ![image-20220110220054662](README.assets/image-20220110220054662.png)
+
+    
+
+  + 关卡序列控制  ControlGlobalLevelSequence
+
+    ![image-20220110224329980](README.assets/image-20220110224329980.png)
+
+    ![image-20220110230826279](README.assets/image-20220110230826279.png)
+
+    + 输入  GlobalControlLevelSwquence Data Array   控制 LevelSequence Control ID  列表
+
+      ![image-20220110224629052](README.assets/image-20220110224629052.png)
+
+      
+
+    + 输入  Control Type  控制的类型 
+
+      ![image-20220110224730782](README.assets/image-20220110224730782.png)
+
+      + Init   归零
+      + Play  正向播放
+      + Play Reverse  倒放
+      + Play to by Time   播放到某个时间
+      + Play to by Marded Frame Index  播放到标记帧  通过下标
+      + Jump to by Time   跳转到某个时间
+      + Jump to by Marded Frame Index 跳转到标记帧  通过下标
+
+    + 输入  Control Time
+
+      + 在 Play to by Time、Jump to by Time中生效
+
+    + 输入  Control Marded Frame Index 
+
+      + 在Play to by Marded Frame Index、Jump to by Marded Frame Index中生效
+
+        
+
+  + 演示
+
+    ![image-20220110230952636](README.assets/image-20220110230952636.png)
+
+    
+
+  + 运行效果
+
+    ![image-20220110225636089](README.assets/image-20220110225636089.png)
+
+    ![image-20220110225659512](README.assets/image-20220110225659512.png)
+
+    ![image-20220110225718424](README.assets/image-20220110225718424.png)
+
+    
+
++ ==注：关卡序列运行时需把所有关卡序列的窗口关闭，否则会占有控制状态==
+
+  
 
 ### DrawBoardManager
 
 + Content
+
+  ![image-20220110231117321](README.assets/image-20220110231117321.png)
+
+  ![image-20220110231141003](README.assets/image-20220110231141003.png)
+
+  ![image-20220110231203466](README.assets/image-20220110231203466.png)
 
   
 
 + 功能描述
 
   + 画板模块
+
   + 支持在指定区域 使用画笔或箭头
+
   + 支持撤销及清空功能
+
   + 画板空间计算采用三维坐标计算
+
+    
 
 + 样例
 
+  + 游戏模式更改成触控屏模式
 
+    ![image-20220110210444063](README.assets/image-20220110210444063.png)
+
+    
+
+  + 将DrawBoard拖拽到场景中
+
+    ![image-20220110231403009](README.assets/image-20220110231403009.png)
+
+    
+
+  + 将DrawBoardArrow拖拽到场景中
+
+    ![image-20220110231505247](README.assets/image-20220110231505247.png)
+
+    
+
+  + 将DrawBoardLines拖拽到场景中
+
+    ![image-20220110231530737](README.assets/image-20220110231530737.png)
+
+    
+
+  + DrawBoard中选择 DrawBoardArrow  DrawBoardLines
+
+    ![image-20220110231638964](README.assets/image-20220110231638964.png)
+
+    
+
+  + 运行效果
+
+    ![image-20220110231734281](README.assets/image-20220110231734281.png)
+
+    
+
++ ==注：触控采用3D射线碰撞实现，所以触控区域前方不能有其他物体遮挡==
+
+  
 
 ### ResourceManager
 
