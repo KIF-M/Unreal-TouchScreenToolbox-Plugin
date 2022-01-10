@@ -15,6 +15,36 @@
 
 
 
+## 插件使用
+
++ 将插件压缩包解压
+
+  ![image-20220110235416046](README.assets/image-20220110235416046.png)
+
+  ![image-20220110235532444](README.assets/image-20220110235532444.png)
+
+  
+
++ 将TouchScreenToolbox放到使用项目的插件文件夹中  如果没有，新建文件夹
+
+  ![image-20220110235838284](README.assets/image-20220110235838284.png)
+
+  ![image-20220110235934133](README.assets/image-20220110235934133.png)
+
+  
+
++ 打开插件， 选择Project -> KIF  开启插件  重启Unreal
+
+  ![image-20220111000130062](README.assets/image-20220111000130062.png)
+
+  
+
++ 打开Content
+
+  ![image-20220111000329739](README.assets/image-20220111000329739.png)
+
+
+
 ## 模块总览
 
 + 插件界面
