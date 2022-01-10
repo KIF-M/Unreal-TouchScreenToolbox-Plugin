@@ -203,18 +203,38 @@
   ![image-20220110070457342](README.assets/image-20220110070457342.png)
 
 + 功能描述
-
   + 读取Json/Txt文件
-
   + 解析JsonObject
-
   + 解析JsonObjectArray
-
   + 解析JsonValue
 
-    
++ 样例
 
+  + TXT解析 ParseTxtFileFromDisk 
 
+    + 输入txt路径  txt名字（带后缀）  返回FString数组    按照换行分割
+
+      ![image-20220110074043018](README.assets/image-20220110074043018.png)
+
+      <img src="README.assets/image-20220110074241255.png" alt="image-20220110074241255" style="zoom:67%;" />
+
+    + 演示
+
+      ![image-20220110074830782](README.assets/image-20220110074830782.png)
+
+    + 运行结果
+
+      ![image-20220110074905451](README.assets/image-20220110074905451.png)
+
+  + Json解析 ParseJsonFileFromDisk
+
+    + 输入Json路径  Json名字(带后缀)  返回 JsonObject
+
+      ![image-20220110075234223](README.assets/image-20220110075234223.png)
+
+      ![image-20220110075404667](README.assets/image-20220110075404667.png)
+
+    + 
 
 + VideoControlManager                            视频控制管理模块
 
