@@ -698,6 +698,8 @@
 
 + Content
 
+  ![image-20220110232342524](README.assets/image-20220110232342524.png)
+
   
 
 + 功能描述
@@ -708,3 +710,90 @@
 
 + 样例
 
+  + 选取文件夹  GetDialogDirectory
+
+    ![image-20220110232515295](README.assets/image-20220110232515295.png)
+
+    ![image-20220110232543940](README.assets/image-20220110232543940.png)
+
+    
+
+    + 演示
+
+      ![image-20220110232626558](README.assets/image-20220110232626558.png)
+
+    
+
+    + 运行结果
+
+      ![image-20220110232755814](README.assets/image-20220110232755814.png)
+
+      ![image-20220110232810914](README.assets/image-20220110232810914.png)
+
+    
+
+  + 选取文件 GetDialogFile
+
+    ![image-20220110233031780](README.assets/image-20220110233031780.png)
+
+    ![image-20220110233227941](README.assets/image-20220110233227941.png)
+
+    
+
+    + 演示
+
+      ![image-20220110233250452](README.assets/image-20220110233250452.png)
+
+      
+
+    + 运行结果
+
+      ![image-20220110233342762](README.assets/image-20220110233342762.png)
+
+      ![image-20220110233357523](README.assets/image-20220110233357523.png)
+
+      
+
+  + 拖拽BP_ResourceManager到场景中
+
+    ![image-20220110233518787](README.assets/image-20220110233518787.png)
+
+    
+
+    + 按Tab键显示全局资源
+
+      ![image-20220110233609580](README.assets/image-20220110233609580.png)
+
+      
+
+    + 点击Save保存  点击Close关闭
+
+      ![image-20220110233655352](README.assets/image-20220110233655352.png)
+
+      
+
++ 添加新的本地化数据
+
+  
+
+  + 打开BP_SaveGameData  新添加数据变量
+
+    ![image-20220110233830806](README.assets/image-20220110233830806.png)
+
+    
+
+  + 打开BP_ResourceManagerWidget  中事件
+
+    
+
+    + 在 Event Construct 中初始化
+
+      ![image-20220110234021560](README.assets/image-20220110234021560.png)
+
+      
+
+    + 保存   设置SaveGame中数据  然后保存数据
+
+      ![image-20220110234143818](README.assets/image-20220110234143818.png)
+
+    
