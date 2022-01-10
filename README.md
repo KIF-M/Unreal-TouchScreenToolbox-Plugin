@@ -226,6 +226,8 @@
 
       ![image-20220110074905451](README.assets/image-20220110074905451.png)
 
+      
+
   + Json解析 ParseJsonFileFromDisk
 
     + 输入Json路径  Json名字(带后缀)  返回 JsonObject
@@ -234,15 +236,175 @@
 
       ![image-20220110075404667](README.assets/image-20220110075404667.png)
 
-    + 
+    + 演示
 
-+ VideoControlManager                            视频控制管理模块
+      ![image-20220110081035211](README.assets/image-20220110081035211.png)
 
-+ LevelSequenceControlManager           关卡序列动画管理模块
+    + 运行结果
 
-+ DrawBoardManager                               画板管理模块
+      ![image-20220110081116055](README.assets/image-20220110081116055.png)
+
+      
+
+  + Json解析Value  TryGetValueField
+
+    + 输入 JsonObject   字段名称   返回字段对应值
+
+      ![image-20220110081438402](README.assets/image-20220110081438402.png)
+
+      ![image-20220110081811463](README.assets/image-20220110081811463.png)
+
+      
+
+    + 演示
+
+      ![image-20220110081735915](README.assets/image-20220110081735915.png)
+
+    + 运行结果
+
+      ![image-20220110081845474](README.assets/image-20220110081845474.png)
+
+      
+
+  + Json解析JsonObject  TryGetObjectField
+
+    + 输入JsonObject  字段名称   返回 JsonObject
+
+      ![image-20220110082513262](README.assets/image-20220110082513262.png)
+
+      ![image-20220110082541382](README.assets/image-20220110082541382.png)
+
+    + 演示
+
+      ![image-20220110083658208](README.assets/image-20220110083658208.png)
+
+    + 运行结果
+
+      ![image-20220110083725714](README.assets/image-20220110083725714.png)
+
+      
+
+  + Json解析JsonArray  TryGetArrayField
+
+    + 输入JsonObject  字段名称   返回 JsonArray
+
+      ![image-20220110082614869](README.assets/image-20220110082614869.png)
+
+      ![image-20220110082634674](README.assets/image-20220110082634674.png)
+
+    + 演示
+
+      ![image-20220110083927576](README.assets/image-20220110083927576.png)
+
+    + 运行结果
+
+      ![image-20220110083945859](README.assets/image-20220110083945859.png)
+
+  + JsonObject 转 Json FString   JsonObjectToJsonFstring
+
+    + 输入JsonObject     返回 Json FString
+
+      ![image-20220110083249488](README.assets/image-20220110083249488.png)
+
+      ![image-20220110083305850](README.assets/image-20220110083305850.png)
+
+    + 演示
+
+      ![image-20220110084023056](README.assets/image-20220110084023056.png)
+
+    + 运行结果
+
+      ![image-20220110084044748](README.assets/image-20220110084044748.png)
+
+  + Json FString 转 JsonObject   JsonFStringToJsonObject
+
+    + 输入Json FString  字段名称   返回 JsonObject
+
+      ![image-20220110083402314](README.assets/image-20220110083402314.png)
+
+      ![image-20220110083427413](README.assets/image-20220110083427413.png)
+
+    + 演示
+
+      ![image-20220110084137940](README.assets/image-20220110084137940.png)
+
+    + 运行结果
+
+      ![image-20220110084155366](README.assets/image-20220110084155366.png)
+
++ ==注：浮点类型算小数点最多存放8位，超出范围数据会与源数据不同==
+
+
+
+### VideoControlManager
+
++ Content
 
   
 
-+ ResourceManager                                   本地化存储管理模块
++ 功能描述
+
+  + 自定义视频播放组件
+  + 支持读写本地及局域网文件
+  + 视频控制器组件
+  + 支持视频播放、暂停、进度条、跳帧
+  + 支持多窗口同视频流及不同视频流
+  + 解决二维鼠标相对坐标问题，转为三维空间射线碰撞运算
+
++ 样例
+
+
+
+### LevelSequenceControlManager           
+
++ Content
+
+  
+
++ 功能描述
+
+  + 支持关卡序列异步播放、暂停、倒放、延时
+  + 支持批量控制 共七种控制类型
+    + 初始化
+    + 正向播放
+    + 倒放
+    + 播放到固定时间
+    + 跳转到固定时间
+    + 播放到某个标记帧
+    + 跳转到某个标记帧
+
++ 样例
+
+
+
+### DrawBoardManager                               
+
++ Content
+
+  
+
++ 功能描述
+
+  + 画板模块
+  + 支持在指定区域 使用画笔或箭头
+  + 支持撤销及清空功能
+  + 画板空间计算采用三维坐标计算
+
++ 样例
+
+
+
+### ResourceManager                                   
+
++ Content
+
+  
+
++ 功能描述
+
+  + 本地化存储管理模块
+  + 将自定义变量以SaveGame格式本地化存储， 保存后下次开启可得到最终保存数据
+  + 支持文件选取及文件夹选取
+
++ 样例
 
